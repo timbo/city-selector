@@ -7,6 +7,7 @@ class Region extends React.Component {
     toggleCity: PropTypes.func,
     selected: PropTypes.bool
   }
+  
   render () {
     const city = this.props.city;
     const selected = this.props.selected ? true : city.checked;

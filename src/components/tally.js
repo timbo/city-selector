@@ -5,12 +5,13 @@ class Tally extends React.Component {
   static propTypes = {
     cityData: PropTypes.array,
   }
+
   render () {
     const cityData = this.props.cityData;
 
     // Tally the total number of checked cities
-    let total = cityData.reduce((acc, current) => {
-      if (current.checked){
+    let total = cityData.reduce((acc, value) => {
+      if (value.checked){
         acc++;
       }
       return acc;

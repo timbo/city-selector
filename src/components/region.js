@@ -9,14 +9,11 @@ class Region extends React.Component {
     toggleRegion: PropTypes.func,
     selected: PropTypes.bool
   }
-  state =  {
-    cities: this.props.cities
-  }
-
+  
   render () {
     const region = this.props.region;
-    const cities = this.state.cities;
-    let selected = false; 
+    const cities = this.props.cities;
+    let selected = false;
 
     if (this.props.selected) {
       selected = true;

@@ -17,6 +17,7 @@ class Country extends React.Component {
     const selected = !regions
       .map(value => value.checked)
       .includes(false);
+      
     return (
       <li>
         <input
