@@ -1,6 +1,6 @@
 To install dependancies run
 
-###`yarn install`
+### `yarn install`
 
 
 In the project directory, you can run:
